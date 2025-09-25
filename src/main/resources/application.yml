@@ -5,6 +5,9 @@ spring:
     name: wp-gateway
   cloud:
     gateway:
+      httpclient:
+        connect-timeout: 10000
+        response-timeout: 10000
       discovery:
         locator:
           enabled: true
